@@ -1,2 +1,2 @@
-# Project_01
+# Ready, Set, Candy!
 <Ready, Set, Candy!>
