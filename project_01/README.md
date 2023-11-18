@@ -1,1 +1,1 @@
-# Ready, Set, Candy!
+# Ready, Set, Nerds!
