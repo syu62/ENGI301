@@ -19,3 +19,19 @@ This allows tkinter to run the graphics framework and for the SPI screen to disp
 **SetGameCodeOnly.py**
 This python file contains the code for only the game Set and its logisitics (it does not include code on connecting tkinter's interface to the SPI screen or the button press or motor). 
 On Visual Studio Code, or a similar platform, import the code and the folder "Set_Cards". This folder contains all 81 possible cards in the deck. Once you do both, run the code and a tkinter GUI should appear in a pop-up window. To click buttons and cards, left-click and to unclick cards, left-click again.
+
+**ButtonMotorCode.py**
+This python file should be run on Cloud9 with the PocketBeagle connected. It contains the code and configurations for the button press and motor turn. The code should work so that if you press the button, the motor does a 360 rotation. You may have to adjust the value in time.sleep(xx) on line 143 to finetune your continuous motor to spin exactly 360 degrees. Be sure to also adjust lines 73 and 135 to reflect the servo and button's pins, respectively. To run this code, type in CLoud9's terminal: <br>
+`sudo python3 ButtonMotorCode.py`
+
+**LCD-on.sh**
+This sh file configures the SPI screen and configurates the pins. Be sure to adjust any pins based on your wirings. For the purposes of how I coded set, this code also rotates the SPI display 90 degrees. To run this code, type in Cloud9's terminal: <br>
+`sudo sh LCD-on.sh`
+
+**LCD-display.sh**
+This sh file demonstrates the the SPI screen is working and connected to Cloud9. Be sure to download the image, "borisLCD.jpg" prior to running. To run this code, type in Cloud9's terminal: <br>
+`sudo sh LCD-display.sh`
+
+**DemonstrationSlideShow.py**
+This python file contains the code for the slideshow that is demonstrated in the video on Hackster. It shows what should happen if the touchscreen on the SPI screen was established. Be sure to download the file To run this code, type in Cloud9's terminal: <br>
+`sudo python3 DemonstrationSlideshow.py`
