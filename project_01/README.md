@@ -5,8 +5,8 @@ This GitHub repository contains the code and software instructions for Ready, Se
 ### 1. Package Installation
 ### 2. SPI Screen and Pin Configuration
 Before running any of the LCD code, be sure to configure the pins using "configurepins.sh" and in the terminal type:
-' sudo modprobe fbtft_device name=adafruit28 debug=7 verbose=3 gpios=dc:89,reset:26 '
-' cat /dev/urandom > /dev/fb0 '   
+`sudo modprobe fbtft_device name=adafruit28 debug=7 verbose=3 gpios=dc:89,reset:26`
+`cat /dev/urandom > /dev/fb0`
 
 ### 3. Running the Code
 **SetGameCodeOnly.py**
