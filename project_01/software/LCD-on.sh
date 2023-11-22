@@ -1,6 +1,6 @@
 """
 --------------------------------------------------------------------------
-LCD Display
+LCD On
 --------------------------------------------------------------------------
 License:   
 Copyright 2023 - Sunny Yu
@@ -31,10 +31,11 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 --------------------------------------------------------------------------
 
-LCD Display
+LCD On
 
-This code is built to demonstrate that the SPI screen is working and connceted 
-to Cloud9. After running, the SPI screen should display an image of PocketBeagle.
+This code connects the SPI screen and configurates the pins required for the
+screen to function properly. It also rotates the screen by 90 degrees since
+Set was built to be played in lanscape.
 
 """
 
