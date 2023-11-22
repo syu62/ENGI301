@@ -4,23 +4,15 @@ This GitHub repository contains the code and software instructions for Ready, Se
 ## Software
 ### 1. Package Installation
 ### 2. SPI Screen and Pin Configuration
-Before running any of the LCD code, be sure to configure the pins using "configurepins.sh" and in the terminal type:
-
-`sudo modprobe fbtft_device name=adafruit28 debug=7 verbose=3 gpios=dc:89,reset:26`
-
-`cat /dev/urandom > /dev/fb0`
-
-This should connect your SPI screen and display white noise pixels (like a static tv screen). Then run the LCD-on.sh by typing:
-
-`sudo sh LCD-on.sh`
-
-Your SPI screen should turn black with white text stating "Debian GNU/Linux 10 beaglebone" in the landscape orientation. Afterwards, be sure to download the image "borisLCD.jpg" and run LCD-display,sh by typing:
-
-`sudo sh LCD-display.sh`
-
-This will pull up a sideways image of a pocketbeagle on another screen (this is image borisLCD.jpg). Finally, after ensuring that the SPI screen is working properly, type into the command terminal:
-
-`sudo FRAMEBUFFER=/dev/fb0 startx -- -dpi 60`
+Before running any of the LCD code, be sure to configure the pins using "configurepins.sh" and in the terminal type: <br>
+`sudo modprobe fbtft_device name=adafruit28 debug=7 verbose=3 gpios=dc:89,reset:26` <br>
+`cat /dev/urandom > /dev/fb0` <br>
+This should connect your SPI screen and display white noise pixels (like a static tv screen). Then run the LCD-on.sh by typing: <br>
+`sudo sh LCD-on.sh` <br>
+Your SPI screen should turn black with white text stating "Debian GNU/Linux 10 beaglebone" in the landscape orientation. Afterwards, be sure to download the image "borisLCD.jpg" and run LCD-display,sh by typing: <br>
+`sudo sh LCD-display.sh` <br>
+This will pull up a sideways image of a pocketbeagle on another screen (this is image borisLCD.jpg). Finally, after ensuring that the SPI screen is working properly, type into the command terminal: <br>
+`sudo FRAMEBUFFER=/dev/fb0 startx -- -dpi 60` <br>
 This allows tkinter to run the graphics framework and for the SPI screen to disply the tkinter GUI that pops up when run in VIsual Studio Code. Then, in a new terminal, run "GUI.py". This will pull up the Welcome Screen with the Start Game and Instructions button. As of now, however, the touch screen doesn't work so it will remain at the start screen until that feature is established.
 
 ### 3. Running the Code
