@@ -3,6 +3,13 @@ This GitHub repository contains the code and software instructions for Ready, Se
 
 ## Software
 ### 1. Package Installation
+Prior to running the code, make sure to install all relevant packages and libraries. These include: <br>
+`sudo apt-get update` <br>
+`sudo apt-get install python-pip -y` <br>
+`sudo apt-get install python3-pip -y` <br>
+`sudo apt-get install python3-pillow -y`<br>
+
+
 ### 2. SPI Screen and Pin Configuration
 Before running any of the LCD code, be sure to configure the pins using "configurepins.sh" and in the terminal type: <br>
 `sudo modprobe fbtft_device name=adafruit28 debug=7 verbose=3 gpios=dc:89,reset:26` <br>
@@ -35,3 +42,7 @@ This sh file demonstrates the the SPI screen is working and connected to Cloud9.
 **DemonstrationSlideShow.py**
 This python file contains the code for the slideshow that is demonstrated in the video on Hackster. It shows what should happen if the touchscreen on the SPI screen was established. Be sure to download the file To run this code, type in Cloud9's terminal: <br>
 `sudo python3 DemonstrationSlideshow.py`
+
+**GUI.py**
+This python file contains the code for the game to display onto the SPI screen. It will display the start screen with a cross cursor, but will not advance to the next frame due to the touchscreen not working. Be sure to start the xserver prior to running this code. To run this code in Cloud9, type in the terminal: <br>
+`sudo python3 GUI.py`
