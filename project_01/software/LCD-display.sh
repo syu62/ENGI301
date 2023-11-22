@@ -35,6 +35,8 @@ LCD Display
 
 This code is built to demonstrate that the SPI screen is working and connceted 
 to Cloud9. After running, the SPI screen should display an image of PocketBeagle.
+Make sure to download "borisLCD.jpg" before running.
+
 """
 
 export FRAMEBUFFER=/dev/fb0
