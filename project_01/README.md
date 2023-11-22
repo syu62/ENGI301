@@ -9,12 +9,15 @@ Before running any of the LCD code, be sure to configure the pins using "configu
 `sudo modprobe fbtft_device name=adafruit28 debug=7 verbose=3 gpios=dc:89,reset:26`
 
 `cat /dev/urandom > /dev/fb0`
+
 This should connect your SPI screen and display white noise pixels (like a static tv screen). Then run the LCD-on.sh by typing:
 
 `sudo sh LCD-on.sh`
+
 Your SPI screen should turn black with white text stating "Debian GNU/Linux 10 beaglebone" in the landscape orientation. Afterwards, be sure to download the image "borisLCD.jpg" and run LCD-display,sh by typing:
 
 `sudo sh LCD-display.sh`
+
 This will pull up a sideways image of a pocketbeagle on another screen (this is image borisLCD.jpg). Finally, after ensuring that the SPI screen is working properly, type into the command terminal:
 
 `sudo FRAMEBUFFER=/dev/fb0 startx -- -dpi 60`
