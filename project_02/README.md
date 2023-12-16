@@ -1,2 +1,2 @@
-Ready, Set, Nerds! PCB Design
+# Ready, Set, Nerds! PCB Design
 
